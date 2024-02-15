@@ -1,0 +1,43 @@
+.filterRow {
+    width: 100%;
+
+    display: flex;
+    column-gap: 5px;
+    overflow-x: scroll;
+    padding: 7.5px 0;
+    box-sizing: border-box;
+}
+
+
+.filterRow .filterCard {
+    color: var(--txtclr2);
+    background-color: var(--bgclr1);
+    box-shadow: var(--shd1);
+
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh2);
+    box-sizing: border-box;
+    padding: 5px 25px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+    z-index: 1;
+
+    width: min-content;
+    height: min-content;
+
+}
+
+
+.filterRow .filterCard.selected {
+    color: var(--whiteclr);
+    font-weight: var(--txtwh3);
+
+
+    background-color: var(--secclr1);
+
+    position: relative;
+    bottom: 2.5px;
+    animation: var(--jumpAnim2);
+}

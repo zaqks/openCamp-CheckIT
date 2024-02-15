@@ -1,0 +1,83 @@
+:root {
+    --starUnit: 15px;
+    --starClr: var(--secclr2);
+    --starBg: var(--bgclr3);
+}
+
+ 
+.star {
+    cursor: pointer;
+
+    width: calc(var(--starUnit)*4);
+    height: calc(var(--starUnit)*4);
+
+    position: relative;
+}
+
+.star .block {
+    content: "";
+
+    background-color: var(--starBg);
+    position: absolute;
+
+    width: var(--starUnit);
+    height: var(--starUnit);
+
+    top: calc(var(--starUnit)*1.5);
+    right: calc(var(--starUnit)*1.5);
+
+    filter: contrast(0.7);
+
+}
+
+
+.star .block::before {
+    content: "";
+
+    width: var(--starUnit);
+    height: calc(var(--starUnit)*1.5);
+
+    position: absolute;
+
+    top: calc(var(--starUnit)*-1.5);
+
+    border-right: calc(var(--starUnit)*0.5) solid transparent;
+    border-left: calc(var(--starUnit)*0.5) solid transparent;
+
+    border-bottom: calc(var(--starUnit)*1.5) solid var(--starBg);
+    box-sizing: border-box;
+}
+
+
+.star .block#block1 {
+    rotate: 0deg;
+}
+
+.star .block#block2 {
+    rotate: 72deg;
+}
+
+.star .block#block3 {
+    rotate: 144deg;
+}
+
+.star .block#block4 {
+    rotate: 216deg;
+}
+
+.star .block#block5 {
+    rotate: 288deg;
+}
+
+
+/**************/
+.star.selected .block{
+    filter: none;
+    background-color: var(--starClr);
+}
+
+.star.selected .block::before {
+  
+    border-bottom-color: var(--starClr)
+  
+}

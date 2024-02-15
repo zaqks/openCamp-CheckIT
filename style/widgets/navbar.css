@@ -1,0 +1,105 @@
+#navbar {
+    /*
+    background-color: var(--bgclr1);
+    */
+    background-color: var(--blurClr1);
+    width: calc(100% - 10px);
+
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: var(--shd2);
+
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    padding: 10px 5px;
+
+    backdrop-filter: blur(5px);
+
+}
+
+
+#navbar .navbarItm {
+    width: 45px;
+    aspect-ratio: 1;
+
+    /*background-color: var(--bgclr3);*/
+    border-radius: 22.5px;
+    cursor: pointer;
+}
+
+#navbar .navbarItm #icn {
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 7.5px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-origin: content-box;
+
+    filter: invert(100%);    
+}
+
+
+#navbar .navbarItm.selected {
+    background-color: var(--secclr2);
+    transform: scale(1.3);
+
+    position: relative;
+    top: -10px;
+    border-radius: 37.5px;
+
+    box-shadow: var(--shd2);
+
+
+    animation: var(--jumpAnim);
+
+
+}
+
+#navbar .navbarItm.selected #icn {
+    filter: invert(100%);
+}
+
+/**icons************/
+
+#navbar .navbarItm#stats #icn {
+    background-image: url(icons/icons8-combo-chart-100.png);
+}
+
+#navbar .navbarItm#shop #icn {
+    background-image: url(icons/icons8-shop-96.png);
+}
+
+#navbar .navbarItm#staff #icn {
+    background-image: url(icons/icons8-supplier-48.png);
+}
+
+#navbar .navbarItm#cart #icn {
+    background-image: url(icons/icons8-cart-48.ico);
+}
+
+#navbar .navbarItm#orders #icn {
+    background-image: url(icons/icons8-queue-48.ico);
+}
+
+#navbar .navbarItm#pending #icn {
+    background-image: url(icons/icons8-queue-48.ico);
+}
+
+#navbar .navbarItm#preparing #icn {
+    background-image: url(icons/icons8-packing-100.png);
+}
+
+#navbar .navbarItm#ready #icn {
+    background-image: url(icons/icons8-tick-100.png);
+}

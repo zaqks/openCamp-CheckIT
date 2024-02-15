@@ -1,0 +1,36 @@
+.staffCard{
+    background-color: var(--bgclr1);
+
+    /*background-image: linear-gradient(145deg, var(--bgclr2), var(--bgclr2), var(--bgclr2), var(--bgclr2), var(--secclr2));*/
+
+    border-radius: 5px;
+    box-shadow: var(--shd1);
+
+    box-sizing: border-box;
+    padding: 5px;
+
+    display: flex;
+    column-gap: 5px;
+
+    /*flex-wrap: wrap;*/
+
+    
+
+}
+
+.staffCard #infoSect{
+    width: 100%;
+    
+    color: var(--txtclr1);
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+}
+
+.staffCard #infoSect #password{
+    color: var(--secclr3);
+}
+
+.staffCard #btnsSect button{
+    height: 30px;
+    width: 30px;
+}

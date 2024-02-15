@@ -1,0 +1,23 @@
+.card {
+    width: 100%;
+
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+
+    border-radius: 5px;
+    box-shadow: var(--shd1);
+
+    background-color: var(--bgclr1);
+    color: var(--txtclr1);
+    cursor: pointer;
+
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+
+.card.active {
+    background-color: var(--secclr1);
+    color: var(--txtclr5);
+}

@@ -1,0 +1,39 @@
+.optionCard{
+    color: var(--txtclr1);
+    width: 100%;
+
+    background-color: var(--bgclr1);
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    padding: 10px 5px ;
+
+    text-align: center;
+    
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh4);
+    box-shadow: var(--shd1);
+
+    cursor: pointer;
+    overflow-wrap: break-word;
+
+    border: 1px solid var(--secclr1);
+
+}
+
+.optionCard span{
+    color: var(--secclr2);
+    font-weight: var(--txtwh3);
+    
+}
+
+
+.optionCard.selected{
+    color: var(--whiteclr);
+    background-color: var(--secclr1);
+    border: none;
+}
+
+.optionCard.selected span{
+    color:var(--whiteclr)
+}

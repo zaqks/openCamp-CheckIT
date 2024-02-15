@@ -1,0 +1,214 @@
+.itemCard {
+    background-color: var(--bgclr1);
+
+    /*background-image: linear-gradient(145deg, var(--bgclr2), var(--bgclr2), var(--bgclr2), var(--bgclr2), var(--secclr2));*/
+
+    border-radius: 5px;
+    box-shadow: var(--shd1);
+
+    box-sizing: border-box;
+    padding: 5px;
+
+    display: flex;
+    column-gap: 5px;
+
+    flex-wrap: wrap;
+
+    cursor: pointer;
+
+}
+
+
+.itemCard #photoSect {
+    width: 20%;
+    aspect-ratio: 1;
+
+    background-color: var(--bgclr3);
+    margin: 0 0 auto 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.itemCard #photoSect img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+}
+
+.itemCard #infoSect1 {
+    width: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 5px;
+
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+
+    color: var(--txtclr1);
+}
+
+
+.itemCard #infoSect1 #name {
+    
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+
+
+}
+
+.itemCard #infoSect1 #price {
+    display: flex;
+    column-gap: 10px;
+
+    margin: 2.5px 0 0 0;
+}
+
+.itemCard #infoSect1 #price #val {
+    font-size: var(--txtsz2);
+    font-weight: var(--txtwh2);
+}
+
+.itemCard .textCard {
+    color: var(--whiteclr);
+    font-size: var(--txtsz1);
+    font-weight: var(--txtwh5);
+    background-color: var(--secclr1);
+    flex: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    padding: 2.5px;
+    margin: auto 0;
+}
+
+
+
+.itemCard #infoSect1 #quantity {
+    display: none;
+    
+    color: var(--txtclr2);
+    font-size: var(--txtsz1);
+}
+
+.itemCard #infoSect1 #tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    column-gap: 5px;
+    row-gap: 5px;
+
+    margin: 10px 0 0 0;
+}
+
+.itemCard #infoSect1 #tags .textCard {
+    padding: 2.5px 5px;
+}
+
+
+/**/
+.itemCard #infoSect2 {
+
+    flex-shrink: 1;
+    box-sizing: border-box;
+    padding: 5px;
+
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+
+    color: var(--secclr1);
+
+    display: flex;
+    flex-direction: center;
+    text-align: center;
+    justify-content: center;
+
+    font-size: var(--txtsz3);
+
+}
+
+.itemCard #infoSect2 #price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemCard #infoSect2 #price #val {
+    color: var(--secclr1);
+    font-size: var(--txtsz4);
+    font-weight: var(--txtwh3);
+}
+
+
+.itemCard #infoSect2 #price .textCard {
+    margin: 5px 0;
+}
+
+/**/
+
+.itemCard #btnsSect {
+    flex: none;
+}
+
+ 
+
+.itemCard #btnsSect button.circularBtn {
+    flex: none;
+    width: 30px;
+    height: 30px;
+    /*border-radius: 15px;*/
+    font-size: var(--txtsz1);
+
+
+
+    
+
+}
+
+
+/** short version (2:1) *************/
+
+.itemCard.short {
+    width: 100%;
+    flex-direction: column;
+}
+
+.itemCard.short #photoSect {
+    width: 100%;
+    height: auto;
+}
+
+
+.itemCard.short #infoSect1 {
+    width: 100%;
+}
+/**/
+
+.itemCard.short #infoSect2 {
+    margin-top: 15px;
+}
+
+.itemCard.short #infoSect2 #price {
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.itemCard.short #infoSect2 #price #val{
+    font-size: var(--txtsz5);
+}
+
+.itemCard.short #infoSect2 #price .textCard {
+    margin: auto 0;
+}
+
+
+.itemCard.short #btnsSect {
+    width: 100%;
+}
+
+.itemCard.hide {
+    display: none;
+}

@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url("fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
+    font-weight: 100 1000;
+    /* 100 => 800*/
+}
+
+:root {
+    --bgclr1: #141414;
+    --bgclr2: #181818;
+    --bgclr3: #1c1c1c;
+
+    /*
+    --secclr1: #d1001f;
+    --secclr2: #ff2c2c;
+    --secclr3: #f94449;
+    */
+    /*
+    --secclr1: #fd7348;
+    --secclr2: #fd8660;
+    --secclr3: #fe9271;
+    */
+    --secclr1: #841818;
+    --secclr2: #a12324;
+    --secclr3: #a33234;
+    
+    
+    /*
+    --secclr1: #ff6200;
+    --secclr2: #fd7f2c;
+    --secclr3: #fda766;
+    */
+    --lightred: #e64044;
+    --lightgreen: #4caf50;
+
+    --txtclr1: #ffffff;
+    --txtclr2: #e5e6e4;
+    --txtclr3: #555555;
+    --txtclr4: #333333;
+    --txtclr5: #111111;
+
+
+    --whiteclr: #ffffff;
+    --blackclr: #111111;
+
+    --blurClr1: #101010aa;
+
+
+    --shclr1: #00000015;
+    --shclr2: #00000030;
+    --shclr3: #000000AA;
+
+    /*************/
+
+    --shd1: 0 0 5px 1px var(--shclr1);
+    --shd2: 0 0 5px 1px var(--shclr2);
+    --shd3: 0 0 5px 1px var(--shclr3);
+
+
+    --txtwh1: 100;
+    --txtwh2: 400;
+    --txtwh3: 500;
+    --txtwh4: 600;
+    --txtwh5: 700;
+    --txtwh6: 800;
+
+    --txtsz1: 15px;
+    --txtsz2: 18px;
+    --txtsz3: 20px;
+    --txtsz4: 25px;
+    --txtsz5: 30px;
+    --txtsz6: 35px;
+    --txtsz7: 45px;
+    --txtsz8: 50px;
+
+
+}

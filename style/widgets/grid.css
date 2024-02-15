@@ -1,0 +1,14 @@
+
+
+.grid {
+    width: 100%;
+
+    display: grid;
+    flex-wrap: wrap;
+
+    grid-template-columns: auto auto;
+
+    column-gap: 5px;
+    row-gap: 5px;
+    
+}

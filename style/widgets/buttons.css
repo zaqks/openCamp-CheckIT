@@ -1,0 +1,81 @@
+button {
+    min-height: 45px;
+    
+    
+
+
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shd1);
+
+    background-color: var(--secclr1);
+    background-image: linear-gradient(to right, var(--secclr1), var(--secclr2));
+
+    color: var(--whiteclr);
+    cursor: pointer;
+}
+
+/*********************/
+
+
+
+.longBtn {
+    width: 100%;
+}
+
+.squareBtn {
+    flex: none;
+    min-height: min-content;
+
+    width: 45px;
+    height: 45px;
+    
+}
+
+.circularBtn {
+    flex: none;
+    min-height: min-content;
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.invert {
+    background-image: none;
+    background-color: var(--bgclr1);
+    color: var(--txtclr1);
+
+    border: 1px solid var(--secclr1);
+}
+
+.big {
+    height: 60px;
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+}
+
+.button {
+    color: var(--whiteclr);
+
+    height: 45px;
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shd1);
+
+    background-color: var(--secclr1);
+    background-image: linear-gradient(to right, var(--secclr1), var(--secclr2));
+
+    color: var(--whiteclr);
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*******************/
