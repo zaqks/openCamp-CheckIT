@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4&f1$6f%t(om=&_#eerrxuu@--c#7)9(tt=jav)!gy^g7i4--$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #
+    "auth_app",
+    "student_app"
 ]
 
 MIDDLEWARE = [
@@ -122,6 +125,7 @@ STATIC_ROOT = join(BASE_DIR, "staticfiles")
 STATIC_URL = "static/"
 
 STATICFILES_DIRS = (
+    join(BASE_DIR, "auth_app/templates"),
     #
     join(BASE_DIR, "style"),
 )
