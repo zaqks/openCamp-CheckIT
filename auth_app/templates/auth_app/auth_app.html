@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authentication</title>
-</head>
-<body>
-        
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'auth_app/auth_app.css' %}">
 
 
-</body>
+  </head>
+  <body>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>SignIn</h1>
+
+
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+
+        <button type="submit">SignIn</button>
+    </form>
+
+
+
+
+  </body>
 </html>
