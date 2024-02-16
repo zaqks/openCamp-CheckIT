@@ -23,6 +23,14 @@ body {
   border-radius: 25px;
 
   background-color: var(--txtclr2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--secclr3);
+  font-weight: var(--txtwh5);
+  font-size: var(--txtsz4);
 }
 
 #body {
@@ -45,7 +53,27 @@ body {
   font-weight: var(--txtwh6);
 }
 
-
-.section{
+.section {
   margin-bottom: 20px;
+}
+
+#libInfo {
+  background-color: var(--whiteclr);
+}
+
+#libInfo #sectionTitle {
+  color: var(--txtclr5);
+}
+
+.libInfoSect {
+  display: flex;
+  justify-content: space-between;
+}
+
+.libInfoSect h1 {
+  color: var(--secclr1);
+}
+
+.libInfoSect h2 {
+  color: var(--secclr3);
 }
