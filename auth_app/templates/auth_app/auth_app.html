@@ -7,25 +7,25 @@
 
     {% load static %}
 
-    <link rel="stylesheet" href="{% static 'auth_app/auth_app.css' %}">
-
-
+    <link rel="stylesheet" href="{% static 'vars.css' %}" />
+    <link rel="stylesheet" href="{% static 'widgets/buttons.css' %}" />
+    <link rel="stylesheet" href="{% static 'auth_app/auth_app.css' %}" />
   </head>
   <body>
-
     <form action="" method="post">
-        {% csrf_token %}
-        <h1>SignIn</h1>
+      {% csrf_token %}
 
+      <h1>SignIn</h1>
 
-        <input type="text" name="" id="">
-        <input type="password" name="" id="">
+      <input
+        type="text"
+        name="username"
+        id=""
+        placeholder="user serial number"
+      />
+      <input type="password" name="password" id="" placeholder="password" />
 
-        <button type="submit">SignIn</button>
+      <button type="submit">SignIn</button>
     </form>
-
-
-
-
   </body>
 </html>

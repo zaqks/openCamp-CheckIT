@@ -126,6 +126,7 @@ STATIC_URL = "static/"
 
 STATICFILES_DIRS = (
     join(BASE_DIR, "auth_app/templates"),
+    join(BASE_DIR, "student_app/templates"),
     #
     join(BASE_DIR, "style"),
 )
