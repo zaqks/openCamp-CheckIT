@@ -22,7 +22,11 @@ def writeToJson(path, wut):
 
 
 dbPaths = {
-    "students": "private/students/students.json"
+    "students": "private/students/students.json",
+    #
+    "rooms": "public/rooms/rooms.json",
+    "library": "public/rooms/library.json",
+
 }
 
 
