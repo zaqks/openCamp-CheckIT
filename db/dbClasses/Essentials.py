@@ -26,7 +26,8 @@ dbPaths = {
     #
     "rooms": "public/rooms/rooms.json",
     "library": "public/rooms/library.json",
-
+    #
+    "rooms3": "public/rooms/rooms3.json",
 }
 
 

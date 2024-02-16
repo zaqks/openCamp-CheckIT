@@ -7,6 +7,7 @@ from db.dbLinker import getLibrary, getSchedule, Schedule
 @StudentAuth.check_login
 def student_app(request):
     return render(request, "student_app/student_app.html", {"library": getLibrary(),
-                                                            "rooms": Schedule.getAll()
+                                                            "avRooms": Schedule.getAv(),
+                                                            "allRooms": getSchedule()
                                                             }
                   )
