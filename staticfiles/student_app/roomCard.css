@@ -1,0 +1,18 @@
+.section .roomCard {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--whiteclr);
+}
+
+.section .roomCard h1 {
+  color: var(--lightgreen);
+}
+
+.section .roomCard.no h1 {
+  color: var(--lightred);
+}
