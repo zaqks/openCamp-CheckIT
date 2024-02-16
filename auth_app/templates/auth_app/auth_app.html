@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'vars.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'widgets/textfields.css' %}" />
+    <link rel="stylesheet" href="{% static 'widgets/buttons.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'auth_app/auth_app.css' %}" />
+  </head>
+  <body>
+    <form action="" method="post">
+      {% csrf_token %}
+
+      <h1>SignIn</h1>
+
+      <div class="input">
+        <div class="txt">username</div>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="user serial number"
+        />
+      </div>
+
+      <div class="input">
+        <div class="txt">password</div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+
+      <button class="longBtn big" type="submit">SignIn</button>
+    </form>
+  </body>
+</html>

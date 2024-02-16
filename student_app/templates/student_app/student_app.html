@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckIT</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'vars.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'widgets/sections.css' %}" />
+    <link rel="stylesheet" href="{% static 'widgets/carouselSlider.css' %}" />
+    <link rel="stylesheet" href="{% static 'widgets/grid.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'student_app/roomCard.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'student_app/student_app.css' %}" />
+    
+  </head>
+  <body>
+    <div id="appbar">
+      <div id="avatar">
+
+        {{username.0}}
+
+      </div>
+    </div>
+
+
+
+    <div id="body">
+      <div id="welcome">
+        <h1>Welcome<br />{{username}}</h1>
+      </div>
+
+
+
+
+      <div class="section" id="libInfo">
+        <div id="sectionTitle">Library Info</div>
+
+        {% for key, val in library.items %}
+        <div class="libInfoSect">
+          <h1>{{key}}</h1>
+          <h2>{{val.0}}/{{val.1}}</h2>
+           
+        </div>
+        {% endfor %}
+    
+      </div>
+
+
+
+      <div class="section lst">
+        <div id="sectionTitle">Available Rooms</div>
+
+        <div class="sectionContent">
+
+          <div class="carouselSlider">
+
+          {% for i in avRooms %}
+          {% for j in i %}
+          {% for k in j %}
+          {% for key, val in k.items %}
+          <div class="carouselSliderItem">
+            <div class="section roomCard">
+              <h1>TD</h1>
+              <h1>{{key}}</h1>
+          </div>
+        </div>
+          {% endfor %}
+          {% endfor%}
+          {% endfor %}
+          {% endfor %}
+        </div>
+        </div>
+
+
+        
+
+
+      </div>
+
+      <div class="section lst">
+        <div id="sectionTitle">All Rooms</div>
+
+
+        <div class="sectionContent">
+
+          <div class="grid">
+
+          {% for i in allRooms.days %}
+        {% for j in i %}
+        {% for k in j %}
+        {% for key, val in k.items %}
+        
+        
+
+
+        {% if val%}
+        <div class="section roomCard no">
+          <h1>TD</h1>
+          <h1>{{key}}</h1>
+          <!--<p>{{key}} : {{val}}</p>-->
+        </div>
+
+        {% else %}
+
+        <div class="section roomCard">
+          <h1>TD</h1>
+          <h1>{{key}}</h1>
+          <!--<p>{{key}} : {{val}}</p>-->
+        </div>
+
+        {% endif %}
+
+
+        {% endfor %}
+        {% endfor%}
+        {% endfor %}
+        {% endfor %}
+      </div>
+      </div>
+
+      </div>
+    </div>
+  </body>
+
+ 
+
+</html>

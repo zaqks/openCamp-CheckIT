@@ -1,0 +1,86 @@
+.ansCard {
+    position: relative;
+
+    background-color: var(--blurClr1);
+    border-radius: 10px;
+
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+
+.ansCard #photoSect {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+
+    top: 0;
+    left: 0;
+}
+
+.ansCard #photoSect img {
+    width: 100%;
+    height:100%;
+
+    object-fit: cover;
+}
+
+.ansCard #infoSect {
+    color: var(--whiteclr);
+
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    background-image: linear-gradient(#00000000, #000000aa);
+}
+
+.ansCard #infoSect #text1{
+    height: 100%;
+    aspect-ratio: 1;
+
+    font-size: var(--txtsz6);
+    font-weight: var(--txtwh5);
+
+    text-align: center;
+    display: flex;
+
+}
+
+.ansCard #infoSect #text1 #txt{
+    margin: auto;
+}
+
+.ansCard #infoSect #text2{
+    margin-top: auto;
+    text-align: end;
+}
+
+
+.ansCard #infoSect #text2 #name{
+    font-size: var(--txtsz4);
+    font-weight: var(--txtwh4);
+    
+}
+
+.ansCard #infoSect #text2 #price{
+    color: var(--secclr3);
+    font-size: var(--txtsz5);
+    font-weight: var(--txtwh5);
+}

@@ -1,0 +1,115 @@
+#appbar {
+    /*
+    background-color: var(--bgclr1);
+    */
+    background-color: var(--blurClr1);
+    width: calc(100% - 10px);
+    height: 65px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: var(--shd2);
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 10px;
+
+    backdrop-filter: blur(5px);
+}
+
+
+
+#appbar .icn {
+    width: 40px;
+    aspect-ratio: 1;
+
+    /*background-color: var(--bgclr2);*/
+    margin: auto 0;
+    text-align: center;
+    border-radius: 20px;
+
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    padding: 7.5px;
+
+    cursor: pointer;
+}
+
+#appbar .icn#backIcn {
+    background-image: url(icons/icons8-back-arrow-48.png);
+    filter: invert(100%);
+}
+
+
+#appbar .icn#profileIcn  {
+    color: var(--whiteclr);
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh4);
+    
+    background-color: var(--secclr2);
+    padding: auto;
+    display: none;
+
+    justify-content: center;
+    
+}
+
+#appbar .icn#menuIcn {
+    background-image: url(icons/zicon.png);
+    padding: 2.5px;
+    cursor: auto;
+}
+
+#appbar #titles {
+    margin: auto;
+    text-align: center;
+}
+
+#appbar #titles #title1 {
+    color: var(--txtclr1);
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh4);
+
+}
+
+#appbar #titles #title2 {
+    font-size: var(--txtsz1);
+    font-weight: var(--txtwh3);
+    color: var(--secclr3)
+}
+
+
+/*************/
+
+#appbar2 {
+    color: var(--txtclr1);
+    background-color: var(--blurClr1);
+    border-radius: 5px;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+
+    box-shadow: var(--shd1);
+    box-sizing: border-box;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    backdrop-filter: blur(5px);
+}
+
+
+#appbar2 #title {
+    margin-top: auto;
+
+    font-size: var(--txtsz6);
+    font-weight: var(--txtwh4);
+}

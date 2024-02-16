@@ -1,0 +1,101 @@
+:root {
+    --logoClr: black;
+    --logoUnit: 25px;
+}
+
+.logo {
+
+    width: calc(var(--logoUnit)*9);
+    height: calc(var(--logoUnit)*7);
+
+    margin: auto;
+
+    position: relative;
+    rotate: -52deg;
+    
+
+    animation-name: blockAnim;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+
+}
+
+.logo .block {
+
+    position: absolute;
+
+    width: calc(var(--logoUnit)*5);
+    aspect-ratio: 1;
+
+    border-radius: calc(var(--logoUnit)*3) 0 calc(var(--logoUnit)) 0;
+
+    border: calc(var(--logoUnit)) solid var(--logoClr);
+    border-right: none;
+    box-sizing: border-box;
+
+
+
+}
+
+.logo .block::before {
+    content: "";
+
+    position: absolute;
+    background-color: var(--logoClr);
+
+    width: calc(var(--logoUnit)*2 + 1px);
+    height: calc(var(--logoUnit));
+
+    top: calc(var(--logoUnit)*-1);
+    right: calc(var(--logoUnit)*-2);
+
+    border: none;
+    border-radius: 0 0 calc(var(--logoUnit)) 0;
+}
+
+
+.logo .block#block1 {
+    bottom: 0;
+    left: 0;
+
+}
+
+.logo .block#block2 {
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+
+@keyframes blockAnim {
+    0% {
+        width: calc(var(--logoUnit)*9);
+        height: calc(var(--logoUnit)*7);
+
+        rotate: -52deg;
+    }
+
+    25% {
+        width: calc(var(--logoUnit)*9);
+        height: calc(var(--logoUnit)*7);
+    }
+
+    50% {
+        width: calc(var(--logoUnit)*7);
+        height: calc(var(--logoUnit)*5);
+    }
+
+    75% {
+        width: calc(var(--logoUnit)*9);
+        height: calc(var(--logoUnit)*7);
+    }
+
+    100% {
+
+        rotate: 0deg;
+    }
+
+
+}

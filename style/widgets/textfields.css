@@ -1,0 +1,71 @@
+input {
+    width: 100%;
+    
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    box-shadow: var(--shd1);
+    font-size: var(--txtsz2);
+    font-weight: var(--txtwh3);
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    text-align: center;
+
+    color: var(--txtclr1);
+    background-color: var(--blurClr1);
+    caret-color: var(--secclr2);
+
+
+}
+
+
+input[ type="number"] {
+    appearance: textfield;
+    font-size: var(--txtsz3);
+}
+
+textarea {
+    color: var(--txtclr1);
+    background-color: var(--bgclr1);
+
+    width: 100%;
+    height: 200px;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    box-shadow: var(--shd1);
+    font-size: var(--txtsz2);
+
+    box-sizing: border-box;
+    padding: 5px 10px;
+
+    resize: none;
+}
+
+
+.funcTextField{
+    display: flex;
+    column-gap: 5px;
+}
+
+.funcTextField button{
+    flex: none;
+}
+
+.funcTextField button.searchBtn{
+    background-image: url(icons/icons8-search-500.png);
+    background-size: contain;
+
+    background-origin: content-box;
+    background-repeat: no-repeat;
+
+    box-sizing: border-box;
+    padding: 7.5px;
+}
+

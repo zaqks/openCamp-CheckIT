@@ -1,0 +1,55 @@
+#userBlock #content {
+    background-color: var(--bgclr2);
+    box-shadow: var(--shd2);
+
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+
+#userBlock #content #userIcon {
+    color: var(--whiteclr);
+    font-size: var(--txtsz7);
+    font-weight: var(--txtwh3);
+
+    background-color: var(--secclr2);
+
+    margin: 0 auto;
+    width: 30%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#userBlock #content .txt {
+    color: var(--txtclr1);
+    text-align: center;
+}
+
+#userBlock #content #username{
+    font-size: var(--txtsz6);
+    font-weight: var(--txtwh3);
+}
+
+#userBlock #content #balance{
+    font-size: var(--txtsz5);
+    font-weight: var(--txtwh3);
+    margin-top: 25px;
+
+}
+
+
+#userBlock #content button{
+    margin-top: 50px;
+}
+
+

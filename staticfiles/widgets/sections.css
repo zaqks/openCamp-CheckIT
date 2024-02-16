@@ -1,0 +1,99 @@
+.section {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgclr1);
+    margin: 5px 0;
+
+    padding: 10px 10px 20px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    box-shadow: var(--shd1);
+}
+
+.section.lst {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.section #sectionTitle {
+    color: var(--txtclr1);
+    font-size: var(--txtsz5);
+    font-weight: var(--txtwh3);
+
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.section.lst #sectionTitle {
+    text-align: left;
+}
+
+.section .sectionContent {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 5px;
+}
+
+/*****************************************/
+.section .sectionContent .subSection {
+    color: var(--txtclr1);
+
+    width: 100%;
+    margin-bottom: 10px;
+
+
+
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+
+    border: 0.5px solid var(--secclr1);
+}
+
+.section .sectionContent .subSection.lst {
+    background-color: transparent;
+}
+
+
+.section .sectionContent .subSection #subSectionTitle {
+    color: var(--txtclr1);
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+    margin-bottom: 10px;
+
+
+
+}
+
+.section .sectionContent .subSection .subSectionContent {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 5px;
+}
+
+/* folding stuff*/
+.section.fold .sectionContent {
+    display: none;
+}
+
+.section #sectionTitle {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.section #sectionTitle #name {
+    width: calc(100% - 50px);
+    margin: auto 0;
+}

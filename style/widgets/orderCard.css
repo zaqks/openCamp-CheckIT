@@ -1,0 +1,72 @@
+/* dependent on the sections */
+
+.orderCard {
+    background-color: var(--bgclr1);
+    border: 0.5px solid var(--secclr2);
+}
+
+.orderCard #sectionTitle #cost {
+    color: var(--secclr1);
+    font-size: var(--txtsz6);
+    font-weight: var(--txtwh3);
+}
+.itemCard #infoSect1 #quantity{
+    display: flex;
+}
+
+.orderCard #orderStatus {
+    color: var(--txtclr1);
+    font-size: var(--txtsz5);
+    font-weight: var(--txtwh2);
+
+    text-align: center;
+
+    margin: 10px;
+
+
+}
+
+/* paid order Card*/
+
+.orderCard.paidOrder {
+    background-color: var(--lightgreen);
+}
+
+.orderCard.paidOrder #sectionTitle #name {
+    color: var(--whiteclr);
+    font-weight: var(--txtwh5);
+}
+
+
+/* special orderCard */
+
+.orderCard.special {
+    animation: blinker 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* orderInfo*/
+.orderCard #orderInfo {
+    color: var(--txtclr1);
+    font-size: var(--txtsz3);
+    font-weight: var(--txtwh3);
+    text-align: center;
+
+    margin-top: 5px;
+}
+
+
+@keyframes blinker {
+    50% {
+        background-color: var(--bgclr1);
+    }
+
+
+    100% {
+        background-color: var(--secclr3);
+        transform: scale(1.02);
+    }
+
+}

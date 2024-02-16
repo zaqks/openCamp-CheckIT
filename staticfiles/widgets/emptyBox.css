@@ -1,0 +1,28 @@
+.emptyBox {
+    margin-top: 50px;
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 10px;
+}
+
+.emptyBox #icn {
+    width: 55%;
+    aspect-ratio: 1;
+    background-image: url(icons/emptyBox.png);
+    background-size: contain;
+    background-position: center;
+
+    margin: 0 auto;
+
+    filter: invert(100%);
+}
+
+.emptyBox #txt {
+    color: var(--txtclr1);
+    text-align: center;
+    font-size: var(--txtsz5);
+    font-weight: var(--txtwh3);
+}

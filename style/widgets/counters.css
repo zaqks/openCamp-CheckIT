@@ -1,0 +1,39 @@
+.counter{
+    display: flex;
+    aspect-ratio: 3;
+
+    column-gap: 5px;
+    justify-content: center;
+
+}
+
+
+.counter input[type='number']{
+    width: calc(100%/3);
+    aspect-ratio: 1;
+    
+
+    font-size: var(--txtsz6);
+    background-color: var(--bgclr1);
+}
+
+.counter button{
+    width: calc(100%/3);
+    height: auto;
+    aspect-ratio: 1;
+    
+    
+
+    font-size: var(--txtsz6);
+    font-weight: var(--txtwh5);
+}
+
+.counter button#rmBtn{
+    background-image: none;
+    background-color: var(--lightred);
+}
+
+.counter button#addBtn{
+    background-image: none;
+    background-color: var(--lightgreen);
+}

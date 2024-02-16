@@ -1,0 +1,91 @@
+.notif {
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+
+    font-size: var(--txtsz2);
+    background-color: var(--bgclr2);
+    box-shadow: var(--shd2);
+
+    display: flex;
+    column-gap: 15px;
+
+
+    margin: 0 0 5px 5px;
+
+
+    animation: showRight 1s;
+
+    position: relative;
+}
+
+.notif.hide {
+    animation: hideRight 1s;
+    animation-fill-mode: forwards;
+}
+
+.notif #btnSect {
+    flex: none;
+}
+
+.notif #btnSect button.circularBtn {
+    transform: scale(0.65);       
+}
+
+
+.notif #infoSect #name {
+    color: var(--secclr3);
+    font-weight: var(--txtwh3);
+}
+
+.notif #infoSect #text {
+    color: var(--txtclr1);
+}
+
+
+/**********************/
+@keyframes showRight {
+    0% {
+        left: 100%;
+    }
+
+    10% {
+        background-color: var(--secclr3);
+    }
+
+    20% {
+        background-color: var(--bgclr1);
+    }
+
+    30% {
+        background-color: var(--secclr3);
+    }
+
+    60% {
+        background-color: var(--bgclr1);
+    }
+
+    70% {
+        background-color: var(--secclr3);
+    }
+
+    80% {
+        background-color: var(--bgclr1);
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes hideRight {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+        display: none;
+    }
+}
