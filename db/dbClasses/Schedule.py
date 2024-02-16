@@ -62,7 +62,10 @@ class Schedule:
                 # j is an hour content
                 lsts2[i].append([])
                 for k in range(lsts[i][j].__len__()):
-                    print(lsts[i][j][k])
+                    if not lsts[i][j][k][list(lsts[i][j][k].keys())[0]]:
+                        lsts2[i][j].append({list(lsts[i][j][k].keys())[0]:False})
+
+                    
 
         return lsts2
 
