@@ -8,7 +8,10 @@
     {% load static %}
 
     <link rel="stylesheet" href="{% static 'vars.css' %}" />
+
+    <link rel="stylesheet" href="{% static 'widgets/textfields.css' %}" />
     <link rel="stylesheet" href="{% static 'widgets/buttons.css' %}" />
+
     <link rel="stylesheet" href="{% static 'auth_app/auth_app.css' %}" />
   </head>
   <body>
@@ -20,12 +23,17 @@
       <input
         type="text"
         name="username"
-        id=""
+        id="username"
         placeholder="user serial number"
       />
-      <input type="password" name="password" id="" placeholder="password" />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+      />
 
-      <button type="submit">SignIn</button>
+      <button  class="longBtn" type="submit">SignIn</button>
     </form>
   </body>
 </html>
