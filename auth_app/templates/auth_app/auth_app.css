@@ -11,11 +11,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  padding: 10%;
+  box-sizing: border-box;
+
+  /*background-color: var(--bgclr1);*/
+  background-color: var(--txtclr2);
 }
 
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+
+  width: 100%;
+
+  border: 1px solid var(--secclr1);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  background-color: var(--bgclr1);
+}
+
+h1 {
+  color: var(--txtclr2);
+
+  margin-bottom: 10%;
+  font-size: var(--txtsz6);
+}
+
+.input {
+  width: 100%;
+}
+
+
+.input .txt{
+  color: var(--txtclr3);
+}
+
+input {
+  text-align: start;
+
+  background-color: var(-bgclr3);
+
+  color: var(--txtclr1);
+  margin: 5px 0;
+  border-bottom: 1px solid var(--secclr1);
+}
+
+button {
+  margin-top: 25%;
 }

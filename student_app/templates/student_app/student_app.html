@@ -8,22 +8,39 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'vars.css' %}" />
 
+    <link rel="stylesheet" href="{% static 'widgets/sections.css' %}" />
     <link rel="stylesheet" href="{% static 'student_app/student_app.css' %}" />
   </head>
   <body>
-    <div id="library">
-      <h1>library</h1>
-      <p>{{library}}</p>
+    <div id="appbar">
+      <div id="avatar"></div>
     </div>
 
-    <div id="rooms">
-      <h1>availble rooms</h1>
-      <p>{{avRooms}}</p>      
-    </div>
+    <div id="body">
+      <div id="welcome">
+        <h1>Welcome<br />User</h1>
+      </div>
 
-    <div id="rooms">
-      <h1>rooms</h1>
-      <p>{{allRooms}}</p>      
+      <div class="section">
+        <div id="sectionTitle">Library Info</div>
+        <p>{{library}}</p>
+      </div>
+
+      <div class="section lst">
+        <div id="sectionTitle">Availble Rooms</div>
+        
+        {% for i in avRooms %}
+
+        <p>{{i}}</p>
+
+        {% endfor %}
+
+      </div>
+
+      <div class="section lst">
+        <div id="sectionTitle">All Rooms</div>
+        <p>{{allRooms}}</p>
+      </div>
     </div>
   </body>
 </html>

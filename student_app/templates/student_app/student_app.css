@@ -1,5 +1,51 @@
-*{
-    font-family: Quicksand;
-    padding: 0;
-    margin: 0;
+* {
+  font-family: Quicksand;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--secclr1);
+}
+
+#appbar {
+  width: 100%;
+  /*background-color: red;*/
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: end;
+}
+
+#appbar #avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+
+  background-color: var(--txtclr2);
+}
+
+#body {
+  width: 100%;
+  /*background-color: green;*/
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#welcome {
+  width: 100%;
+  margin: 10% 0;
+  /*background-color: yellow;*/
+}
+
+#welcome h1 {
+  color: var(--txtclr2);
+
+  font-size: var(--txtsz7);
+  font-weight: var(--txtwh6);
+}
+
+
+.section{
+  margin-bottom: 20px;
 }
