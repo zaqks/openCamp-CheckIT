@@ -1,5 +1,7 @@
-(video available soon)
-
+demo video
+<a>
+https://youtu.be/j9HAMbuEXYk?si=zQW1PlTiQDOUn81T
+</a>
 
 
 # openCampProject
