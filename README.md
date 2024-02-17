@@ -3,6 +3,15 @@ demo video
 https://youtu.be/j9HAMbuEXYk?si=zQW1PlTiQDOUn81T
 </a>
 
+after understanding the project topic you must know
+that the schedule management system hasn't been implemented
+the functionality consists of reseting the statuses everyday
+and only show the current day to the user
+the concept is pretty easy to code since we just need to yo add 
+a block before the return statement inthe get function
+we return only the rooms referenced by the current time 
+and date
+otherwise everything is fine
 
 # openCampProject
 Salut OMC , donc on a choisi le premier challenge  "trouver
