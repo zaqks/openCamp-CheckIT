@@ -1,3 +1,6 @@
+(video available soon)
+
+
 
 # openCampProject
 Salut OMC , donc on a choisi le premier challenge  "trouver
